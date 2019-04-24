@@ -1,0 +1,9 @@
+spring:
+  profiles: dev
+  cloud:
+    gateway:
+      routes:
+      - id: test
+        uri: http://127.0.0.1:8080
+        predicates:
+        - Path=/**
